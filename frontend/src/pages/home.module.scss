@@ -1,0 +1,25 @@
+@import '../assets/colors.scss';
+@import '../assets/general.scss';
+
+.main {
+	padding: 20px;
+
+	max-width: 1200px;
+	margin: 0 auto;
+
+	.videoContainer {
+		overflow: scroll;
+		display: flex;
+		border-radius: 20px;
+		margin-top: 20px;
+
+		-webkit-box-shadow: 5px 19px 25px -13px rgba(0, 0, 0, 0.5);
+		box-shadow: 5px 19px 25px -13px rgba(0, 0, 0, 0.5);
+
+		.player {
+			min-width: 300px;
+			width: 100%;
+			border-radius: 20px;
+		}
+	}
+}

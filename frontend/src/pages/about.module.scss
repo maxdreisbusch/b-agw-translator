@@ -1,0 +1,15 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.container {
+		background-color: white;
+		-webkit-box-shadow: 5px 19px 25px -13px rgba(0, 0, 0, 0.5);
+		box-shadow: 5px 19px 25px -13px rgba(0, 0, 0, 0.5);
+	}
+
+	.pagination {
+		margin: 20px 0;
+	}
+}

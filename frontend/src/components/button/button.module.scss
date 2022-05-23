@@ -1,0 +1,58 @@
+@import '../../assets/colors.scss';
+
+.button {
+	position: relative;
+	overflow: hidden;
+	background-color: black;
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 1.2rem;
+	border: none;
+	border-radius: 10rem;
+	transition: all 0.3s;
+	z-index: 1;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: lighten(black, 15%);
+		transition: all 0.3s;
+		border-radius: 10rem;
+		z-index: -1;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+
+	&__primary {
+		background-color: $secondary;
+		&:before {
+			background-color: darken($secondary, 15%);
+		}
+	}
+	&__secondary {
+		background-color: $primary;
+		&:before {
+			background-color: darken($primary, 15%);
+		}
+	}
+
+	&__disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+
+		&:hover {
+			&:before {
+				width: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"translator": {
+		"typeHere": "Type your text here",
+		"translationThere": "Your translation will appear here",
+		"translate": "translate",
+		"save": "save",
+		"autoTranslate": "LIVE"
+	},
+	"menuBar": {
+		"home": "home",
+		"about": "about",
+		"contact": "contact",
+		"toggleMenu": "menu"
+	},
+	"document": {
+		"next": "nächste Seite",
+		"previous": "vorherige Seite"
+	}
+}
